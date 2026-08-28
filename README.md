@@ -31,7 +31,7 @@ The application source is maintained in a private repository. Source access, lic
 
 ## Security reporting
 
-Do not publish API keys, credentials, private source, customer data, or an undisclosed vulnerability in Discussions. Report suspected security issues privately to [thepros2014@gmail.com](mailto:thepros2014@gmail.com?subject=DUAL-AI-ARENA%20security%20report).
+Read the [strict Discussion Rules](DISCUSSION_RULES.md) before posting. Do not publish API keys, credentials, private source, customer data, or an undisclosed vulnerability in Discussions. Report suspected security issues privately to [thepros2014@gmail.com](mailto:thepros2014@gmail.com?subject=DUAL-AI-ARENA%20security%20report).
 
 ## Supporting material
 
