@@ -30,4 +30,3 @@ Assume that cloud providers may process submitted content under their applicable
 Moderators may edit for redaction, remove, lock, or archive content; limit participation; or report serious violations to GitHub or the appropriate authority. Security reports are handled privately and should not be opened as public Discussions.
 
 If you accidentally expose a secret, revoke or rotate it first, then notify the affected provider or administrator. Do not repost the value while asking for help.
-
