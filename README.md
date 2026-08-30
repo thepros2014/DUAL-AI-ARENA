@@ -17,6 +17,7 @@
 ---
 
 ## 📂 Quick Repository Directory
+- 🛡️ **[Official Security Scan & Audit Report](docs/SECURITY_AUDIT_REPORT.md)**: **100% Passed** 10-gate adversarial security verification & CycloneDX SBOM.
 - 📖 **[Master User Instruction Manual](MANUAL.md)**: Full step-by-step installation, AI setup, and operational guide.
 - ❓ **[Master FAQ & Expert Q&A](docs/MASTER_FAQ_AND_QA.md)**: Exhaustive Q&A reference on setup, models, encryption, and licensing.
 - 🗺️ **[Engineering Roadmap & TODOs](ROADMAP.md)**: 2026–2027 milestone targets, CI/CD bot plans & active community tasks.
