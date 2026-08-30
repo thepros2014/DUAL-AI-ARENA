@@ -1,0 +1,103 @@
+name: Desktop build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: npm
+          cache-dependency-path: Frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        working-directory: Frontend
+        run: npm ci
+
+      - name: Scan tracked files for high-confidence secrets
+        run: .\scripts\verify-secrets.ps1
+
+      - name: Audit frontend dependencies
+        working-directory: Frontend
+        run: npm audit --audit-level=high
+
+      - name: Lint frontend
+        working-directory: Frontend
+        run: npm run lint
+
+      - name: Build embedded frontend
+        working-directory: Frontend
+        run: npm run build
+
+      - name: Restore API
+        run: dotnet restore .\DualAIEnterprise\Applications\WebApi\WebApi.csproj
+
+      - name: Audit .NET dependencies
+        run: .\scripts\verify-nuget.ps1
+
+      - name: Build API
+        run: dotnet build .\DualAIEnterprise\Applications\WebApi\WebApi.csproj --no-restore
+
+      - name: Publish Windows desktop executable
+        run: .\scripts\publish-desktop.ps1
+
+      - name: Verify packaged desktop app
+        run: .\scripts\verify-desktop.ps1
+
+      - name: Verify admin security contracts
+        run: .\scripts\verify-admin.ps1
+
+      - name: Verify batching and provider contracts
+        run: .\scripts\verify-batching.ps1
+
+      - name: Verify AI consensus and attack boundaries
+        run: .\scripts\verify-ai-consensus.ps1
+
+      - name: Verify legal and anti-piracy agreement
+        run: .\scripts\verify-legal.ps1
+
+      - name: Package MSIX for Windows Store
+        run: .\scripts\package-msix.ps1
+
+      - name: Build and verify Windows Installer
+        run: .\scripts\verify-installer.ps1
+
+      - name: Generate CycloneDX SBOM
+        run: .\scripts\write-sbom.ps1 -OutputPath .\dist\security\sbom.json
+
+      - name: Generate release identity manifest
+        run: .\scripts\write-release-manifest.ps1 -ArtifactRoot .\dist\desktop -SbomPath .\dist\security\sbom.json -OutputPath .\dist\security\release-manifest.json -SecurityTestsPassed
+
+      - name: Upload desktop release evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-battle-desktop-release-${{ github.sha }}
+          path: |
+            dist/desktop
+            dist/installer
+            dist/store
+            dist/security
+          if-no-files-found: error

@@ -1,0 +1,41 @@
+name: "📊 Report Model Benchmarks & Hardware Performance"
+description: "Share benchmark performance, token speeds, and vulnerability detection accuracy across different AI models."
+title: "📊 [Benchmark]: "
+labels: ["benchmarks", "performance"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📊 Model Speed & Detection Accuracy Benchmarks
+        Compare how different models perform inside DualAI MID Arena across hardware, token speeds, and vulnerability detection rates!
+
+  - type: input
+    id: hardware_specs
+    attributes:
+      label: "Host Hardware Specifications"
+      placeholder: "e.g. Windows 11, AMD Ryzen 9 7950X, 64GB RAM, RTX 4090 24GB"
+    validations:
+      required: true
+
+  - type: textarea
+    id: benchmark_table
+    attributes:
+      label: "Performance Benchmark Table"
+      description: "Fill in the performance data for each tested model."
+      value: |
+        | Model Name | Host Engine | Tokens/Sec | Time to Find Flaw (s) | Patch Verification |
+        | :--- | :--- | :---: | :---: | :---: |
+        | `llama3.2:3b` | Ollama (Local) | ~85 t/s | 3.2s | ✅ Verified |
+        | `qwen2.5-coder:7b` | Ollama (Local) | ~55 t/s | 2.8s | ✅ Verified |
+        | `gpt-4o` | OpenAI Cloud | ~60 t/s | 2.1s | ✅ Verified |
+        | `gemini-1.5-pro` | Google Cloud | ~70 t/s | 2.4s | ✅ Verified |
+    validations:
+      required: true
+
+  - type: textarea
+    id: qualitative_observations
+    attributes:
+      label: "Key Takeaways & Model Observations"
+      placeholder: "Llama 3.2 is blisteringly fast on local RTX GPUs and caught 9/10 OWASP Top 10 injection bugs with zero cloud token cost..."
+    validations:
+      required: false
