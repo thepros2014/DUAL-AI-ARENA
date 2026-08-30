@@ -18,6 +18,11 @@
 
 ## 📂 Quick Repository Directory
 - 📖 **[Master User Instruction Manual](MANUAL.md)**: Full step-by-step installation, AI setup, and operational guide.
+- ❓ **[Master FAQ & Expert Q&A](docs/MASTER_FAQ_AND_QA.md)**: Exhaustive Q&A reference on setup, models, encryption, and licensing.
+- 🗺️ **[Engineering Roadmap & TODOs](ROADMAP.md)**: 2026–2027 milestone targets, CI/CD bot plans & active community tasks.
+- ⚠️ **[Known Issues & Troubleshooting](KNOWN_ISSUES.md)**: Transparent developer issue log, memory bounds & workarounds.
+- 🔥 **[Hot Topics & Engaging Debates](docs/ENGAGING_TOPICS_AND_DEBATES.md)**: Thought-leadership discussion starters and debate prompts.
+- 🗳️ **[Community Polls & Surveys](docs/COMMUNITY_POLLS_AND_SURVEYS.md)**: Ready-to-post interactive polls for GitHub Discussions.
 - 💬 **[Discussions Blueprints Kit](DISCUSSIONS_KIT.md)**: Copy-paste megathreads for all 6 community discussion categories.
 - 🏆 **[Benchmark Challenges Pack](docs/BENCHMARK_CHALLENGES.md)**: 5 real-world CVE challenges ready to test against Red Team.
 - 🔬 **[Case Study & Battle Transcript](docs/BATTLE_TRANSCRIPT_STUDY.md)**: Play-by-play analysis of a 3-round battle.
