@@ -17,6 +17,8 @@
 ---
 
 ## 📂 Quick Repository Directory
+- 💼 **[Business & Custom Development License](docs/BUSINESS_CUSTOM_DEV_LICENSE.md)**: Full source + 6 months free feature engineering + \$1,500/mo retainer.
+- 🌟 **[Developer Prime Edition (Full Source)](docs/PRIME_PRODUCT_DESCRIPTION.md)**: Unrestricted full-project source code & integration freedom.
 - 🛡️ **[Official Security Scan & Audit Report](docs/SECURITY_AUDIT_REPORT.md)**: **100% Passed** 10-gate adversarial security verification & CycloneDX SBOM.
 - 📖 **[Master User Instruction Manual](MANUAL.md)**: Full step-by-step installation, AI setup, and operational guide.
 - ❓ **[Master FAQ & Expert Q&A](docs/MASTER_FAQ_AND_QA.md)**: Exhaustive Q&A reference on setup, models, encryption, and licensing.
