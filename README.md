@@ -17,6 +17,7 @@
 ---
 
 ## 📂 Quick Repository Directory
+- 🔍 **[How to View & Export Results](docs/HOW_TO_VIEW_RESULTS.md)**: Guide to live UI diffs, `breakage/` reports, disk paths & code export.
 - 🏛️ **[Enterprise Primary Priority SLA](docs/ENTERPRISE_PRIMARY_PRIORITY_SLA.md)**: 20 hrs/week dedicated onboarding + 5 major feature updates + privileged hours.
 - 💼 **[Business & Custom Development License](docs/BUSINESS_CUSTOM_DEV_LICENSE.md)**: Full source + 6 months free feature engineering + \$1,500/mo retainer.
 - 🌟 **[Developer Prime Edition (Full Source)](docs/PRIME_PRODUCT_DESCRIPTION.md)**: Unrestricted full-project source code & integration freedom.
