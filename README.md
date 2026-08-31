@@ -18,6 +18,7 @@
 ---
 
 ## 📂 Quick Repository Directory
+- 💳 **[Payhip API & Webhook Setup Guide](docs/PAYHIP_API_SETUP_GUIDE.md)**: Automated license provisioning & in-app unlock integration.
 - 📚 **[Official DUAL-AI-ARENA Wiki](https://github.com/thepros2014/DUAL-AI-ARENA-Discussions/wiki)** / **[Local Wiki Folder](wiki/)**: Master knowledge base and complete operational manuals.
 - 🔍 **[How to View & Export Results](docs/HOW_TO_VIEW_RESULTS.md)**: Guide to live UI diffs, `breakage/` reports, disk paths & code export.
 - 🏛️ **[Enterprise Primary Priority SLA](docs/ENTERPRISE_PRIMARY_PRIORITY_SLA.md)**: 20 hrs/week dedicated onboarding + 5 major feature updates + privileged hours.
