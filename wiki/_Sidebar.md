@@ -1,26 +1,26 @@
 ### ⚔️ DUAL-AI-ARENA
 - **[[Home]]**
 
-### 📖 Step-by-Step How-To's
+### 🚀 Getting Started
 - **[[How-To-Install-and-Setup]]**
+- **[[How-To-Activate-Your-Purchase]]**
 - **[[How-To-Import-Local-Codebases]]**
+- **[[Offline-Ollama-Setup]]**
 - **[[How-To-Configure-AI-Providers]]**
+
+### ⚔️ Battle Operations
 - **[[How-To-Run-Autonomous-Battles]]**
 - **[[How-To-View-and-Export-Results]]**
 - **[[How-To-Enable-Live-Radio-Commentary]]**
-- **[[How-To-Activate-Enterprise-License]]**
 - **[[How-To-Access-Admin-Console]]**
-- **[[How-To-Troubleshoot-Common-Errors]]**
-- **[[How-To-Build-Custom-CI-CD-Bots]]**
 
-### 🛡️ Deep Dives
+### 🛡️ Security & Privacy
 - **[[Architecture-and-Security]]**
 - **[[10-Gate-Security-Audit]]**
-
-### 💼 Commercial Tiers
 - **[[Licensing-and-Enterprise-Tiers]]**
+- **[[Customer-FAQ-and-Troubleshooting]]**
 
 ---
 ### 🔗 External Links
-- [Discussions Board](https://github.com/thepros2014/DUAL-AI-ARENA-Discussions/discussions)
+- [Customer Discussions](https://github.com/thepros2014/DUAL-AI-ARENA-Discussions/discussions)
 - [Payhip Store](https://payhip.com/b/Tfz7D)
