@@ -1,10 +1,17 @@
 ### ⚔️ DUAL-AI-ARENA
 - **[[Home]]**
 
-### 🚀 Getting Started
-- **[[Quick-Start-Guide]]**
-- **[[Offline-Ollama-Setup]]**
-- **[[Viewing-and-Exporting-Results]]**
+### 📖 Step-by-Step How-To's
+- **[[How-To-Install-and-Setup]]**
+- **[[How-To-Import-Local-Codebases]]**
+- **[[How-To-Configure-AI-Providers]]**
+- **[[How-To-Run-Autonomous-Battles]]**
+- **[[How-To-View-and-Export-Results]]**
+- **[[How-To-Enable-Live-Radio-Commentary]]**
+- **[[How-To-Activate-Enterprise-License]]**
+- **[[How-To-Access-Admin-Console]]**
+- **[[How-To-Troubleshoot-Common-Errors]]**
+- **[[How-To-Build-Custom-CI-CD-Bots]]**
 
 ### 🛡️ Deep Dives
 - **[[Architecture-and-Security]]**
