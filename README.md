@@ -2,6 +2,7 @@
 **Autonomous AI vs. AI Security Gladiators for Software Hardening & Remediation**
 
 [![GitHub Discussions](https://img.shields.io/badge/Discussions-DUAL--AI--ARENA-blueviolet?style=for-the-badge&logo=github)](https://github.com/thepros2014/DUAL-AI-ARENA/discussions)
+[![GitHub Wiki](https://img.shields.io/badge/Wiki-Knowledge_Base-blue?style=for-the-badge&logo=gitbook)](https://github.com/thepros2014/DUAL-AI-ARENA-Discussions/wiki)
 [![Payhip Store](https://img.shields.io/badge/Enterprise_Pro-Payhip_Store-cyan?style=for-the-badge&logo=shopify)](https://payhip.com/b/Tfz7D)
 [![Windows Platform](https://img.shields.io/badge/Platform-Windows_10%2F11-0078d4?style=for-the-badge&logo=windows)](https://payhip.com/b/Tfz7D)
 [![100% On-Premise](https://img.shields.io/badge/Privacy-100%25_On--Premise-success?style=for-the-badge&logo=shield)](https://github.com/thepros2014/ai-battle)
@@ -17,6 +18,7 @@
 ---
 
 ## 📂 Quick Repository Directory
+- 📚 **[Official DUAL-AI-ARENA Wiki](https://github.com/thepros2014/DUAL-AI-ARENA-Discussions/wiki)** / **[Local Wiki Folder](wiki/)**: Master knowledge base and complete operational manuals.
 - 🔍 **[How to View & Export Results](docs/HOW_TO_VIEW_RESULTS.md)**: Guide to live UI diffs, `breakage/` reports, disk paths & code export.
 - 🏛️ **[Enterprise Primary Priority SLA](docs/ENTERPRISE_PRIMARY_PRIORITY_SLA.md)**: 20 hrs/week dedicated onboarding + 5 major feature updates + privileged hours.
 - 💼 **[Business & Custom Development License](docs/BUSINESS_CUSTOM_DEV_LICENSE.md)**: Full source + 6 months free feature engineering + \$1,500/mo retainer.
