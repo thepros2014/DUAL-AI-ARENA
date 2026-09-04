@@ -1,0 +1,86 @@
+name: Security analysis
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: "31 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  security-audit:
+    name: Security & Vulnerability Audit
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: npm
+          cache-dependency-path: Frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        working-directory: Frontend
+        run: npm ci
+
+      - name: Scan tracked files for high-confidence secrets
+        run: .\scripts\verify-secrets.ps1
+
+      - name: Audit frontend dependencies
+        working-directory: Frontend
+        run: npm audit --audit-level=high
+
+      - name: Restore API
+        run: dotnet restore .\DualAIEnterprise\Applications\WebApi\WebApi.csproj
+
+      - name: Audit .NET dependencies
+        run: .\scripts\verify-nuget.ps1
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: csharp, javascript-typescript
+
+      - name: Build API
+        run: dotnet build .\DualAIEnterprise\Applications\WebApi\WebApi.csproj --no-restore
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+
+      - name: Publish Windows desktop executable
+        run: .\scripts\publish-desktop.ps1
+
+      - name: Verify admin security contracts
+        run: .\scripts\verify-admin.ps1
+
+      - name: Verify batching and provider contracts
+        run: .\scripts\verify-batching.ps1
+
+      - name: Verify AI consensus and attack boundaries
+        run: .\scripts\verify-ai-consensus.ps1
+
+      - name: Verify legal and anti-piracy agreement
+        run: .\scripts\verify-legal.ps1
+
+      - name: Build and verify Windows Installer
+        run: .\scripts\verify-installer.ps1
+
+      - name: Generate CycloneDX SBOM
+        run: .\scripts\write-sbom.ps1 -OutputPath .\dist\security\sbom.json

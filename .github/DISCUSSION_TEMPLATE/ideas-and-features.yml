@@ -1,0 +1,43 @@
+name: "💡 Propose an Idea or Feature"
+description: "Suggest improvements, new tools, integrations, or feature ideas for DualAI MID Arena."
+title: "💡 [Feature Idea]: "
+labels: ["enhancement", "community-ideas"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💡 Feature Request & Community Idea Lab
+        Help shape the future of DualAI MID Arena! Submit your architectural proposals, integration ideas, or workflow suggestions.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Feature Category"
+      options:
+        - "AI Models & Multi-Agent Consensus"
+        - "UI / UX & Arena Visuals"
+        - "Live Voice Commentary Engine"
+        - "CI/CD & DevOps Integrations (GitHub Actions, GitLab, Docker)"
+        - "Security Rules, Memory Ceilings & AST Parsers"
+        - "Enterprise Licensing & Store Features"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: "Problem or Opportunity"
+      description: "What pain point does this feature solve?"
+      placeholder: "When auditing microservice repos, we need a way to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: "Proposed Solution & Implementation"
+      description: "How should this feature work?"
+      placeholder: "Add a CLI argument `--ci-mode` that outputs JUnit XML test reports..."
+    validations:
+      required: true
