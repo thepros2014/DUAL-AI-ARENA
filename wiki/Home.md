@@ -38,6 +38,7 @@ New to the Arena? Follow the **[[Arena-Tutorials]]** learning path: run a small 
 ## 📚 Customer Guides & Documentation Index
 
 ### 🚀 Getting Started & Setup
+- 🧭 **[[Navigation-and-Battle-Controls]]**: Top-bar functions, provider status, activation, audio and active-run controls.
 - 📥 **[[How-To-Install-and-Setup]]**: 1-Click GUI setup, prerequisites & first launch.
 - 🔑 **[[How-To-Activate-Your-Purchase]]**: How to activate your Payhip key and unlock unlimited battles.
 - 📁 **[[How-To-Import-Local-Codebases]]**: Project folder ingestion, exclusions & memory safety bounds.
@@ -48,7 +49,7 @@ New to the Arena? Follow the **[[Arena-Tutorials]]** learning path: run a small 
 - ⚔️ **[[How-To-Run-Autonomous-Battles]]**: Auto-Handoff Gladiator mode vs. manual stepping.
 - 🔍 **[[Viewing-and-Exporting-Results]]**: Live diffs, review summaries & git export.
 - 🎙️ **[[How-To-Enable-Live-Radio-Commentary]]**: Play-by-play speech synthesis HUD & audio settings.
-- 🔐 **[[How-To-Access-Admin-Console]]**: Audit trails & licensed user admin access.
+- 🔐 **[[How-To-Access-Admin-Console]]**: Password creation, run inspection, all eight display settings and session locking.
 
 ### 🛡️ Security, Privacy & Enterprise
 - 🧠 **[[Architecture-and-Security]]**: Fresh context handoffs, local processing & protected storage.

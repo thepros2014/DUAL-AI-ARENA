@@ -4,10 +4,12 @@ Learn the Arena by completing a small review from start to finish. These tutoria
 
 ## Learning path
 
+Start with **[[Navigation-and-Battle-Controls]]** for a tour of the top bar, provider status, audio, activation, automatic handoff and wipe controls.
+
 1. **[[Tutorial-Your-First-Arena-Battle]]** — create a challenge, run one turn at a time, and understand the two teams.
 2. **[[Tutorial-Review-and-Test-a-Patch]]** — inspect a proposed change and check it against the original requirements.
 3. **[[Tutorial-Review-Your-Own-Project]]** — move from a small example to a focused review of your code.
-4. **[[How-To-Access-Admin-Console]]** — create Owner and optional Manager passwords, sign in, review a run, and lock the console.
+4. **[[How-To-Access-Admin-Console]]** — create passwords, use the four inspector tabs and eight display settings, and lock the console.
 
 Allow time for model responses; speed depends on your model, hardware, and provider. Screen labels may vary by installed version. Use the corresponding challenge, provider, team, and results controls in your build.
 

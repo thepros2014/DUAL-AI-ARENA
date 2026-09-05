@@ -2,6 +2,7 @@
 - **[[Home]]**
 
 ### 🚀 Getting Started
+- **[[Navigation-and-Battle-Controls]]**
 - **[[Arena-Tutorials]]**
 - **[[Tutorial-Your-First-Arena-Battle]]**
 - **[[Tutorial-Review-and-Test-a-Patch]]**
