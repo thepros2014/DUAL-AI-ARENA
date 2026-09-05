@@ -2,6 +2,10 @@
 - **[[Home]]**
 
 ### 🚀 Getting Started
+- **[[Arena-Tutorials]]**
+- **[[Tutorial-Your-First-Arena-Battle]]**
+- **[[Tutorial-Review-and-Test-a-Patch]]**
+- **[[Tutorial-Review-Your-Own-Project]]**
 - **[[How-To-Install-and-Setup]]**
 - **[[How-To-Activate-Your-Purchase]]**
 - **[[How-To-Import-Local-Codebases]]**

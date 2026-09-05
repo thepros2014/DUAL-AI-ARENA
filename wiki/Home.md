@@ -1,6 +1,8 @@
 # ⚔️ Welcome to the DUAL-AI-ARENA Customer Knowledge Base
 **The Official User Manual, Step-by-Step How-To Guides & Security Reference**
 
+New to the Arena? Follow the **[[Arena-Tutorials]]** learning path: run a small practice battle, test a proposed patch, and then review your own project.
+
 [![GitHub Discussions](https://img.shields.io/badge/Discussions-Customer_Community-blueviolet?style=for-the-badge&logo=github)](https://github.com/thepros2014/DUAL-AI-ARENA-Discussions/discussions)
 [![Payhip Store](https://img.shields.io/badge/Enterprise_Pro-Payhip_Store-cyan?style=for-the-badge&logo=shopify)](https://payhip.com/b/Tfz7D)
 [![100% On-Premise](https://img.shields.io/badge/Privacy-100%25_On--Premise-success?style=for-the-badge&logo=shield)](Architecture-and-Security)
