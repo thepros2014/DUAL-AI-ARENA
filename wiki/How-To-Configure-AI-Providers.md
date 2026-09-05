@@ -1,5 +1,5 @@
 # 🧠 How to Configure AI Model Providers
-**Setting Up Cloud APIs (OpenAI, Gemini) and Local Air-Gapped Models (Ollama)**
+**Setting up cloud providers and local Ollama models**
 
 ---
 
@@ -23,7 +23,7 @@
 2. **OpenAI**: Enter your API key and select your model (`gpt-4o`, `o1-mini`).
 3. **Google Gemini**: Enter your API key and select `gemini-1.5-pro`.
 4. Click **"Save Encrypted Settings"**.
-5. All keys are encrypted at rest using **AES-256-GCM + Windows DPAPI**.
+5. Provider settings are protected in the application's local storage.
 
 ---
 
@@ -34,4 +34,4 @@ You can assign different models to each team:
 
 ---
 
-- [[Home]] • [[How-To-Run-Autonomous-Battles]] • [[How-To-View-and-Export-Results]]
+- [[Home]] • [[How-To-Run-Autonomous-Battles]] • [[Viewing-and-Exporting-Results]]

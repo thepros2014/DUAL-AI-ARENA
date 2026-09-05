@@ -26,7 +26,7 @@
             └───────────────────────┬───────────────────────┘
                                     ▼
        ┌─────────────────────────────────────────────────────────┐
-       │     AES-256-GCM ENCRYPTED LOCAL WORKSPACE SNAPSHOT      │
+       │        PROTECTED LOCAL WORKSPACE SNAPSHOT               │
        │    (Only validated, hardened code crosses the line)     │
        └─────────────────────────────────────────────────────────┘
 ```
@@ -44,12 +44,12 @@
 
 ### ⚔️ Running Battles & Managing Results
 - ⚔️ **[[How-To-Run-Autonomous-Battles]]**: Auto-Handoff Gladiator mode vs. manual stepping.
-- 🔍 **[[How-To-View-and-Export-Results]]**: Live diffs, `breakage/` reports, encrypted disk paths & git export.
+- 🔍 **[[Viewing-and-Exporting-Results]]**: Live diffs, review summaries & git export.
 - 🎙️ **[[How-To-Enable-Live-Radio-Commentary]]**: Play-by-play speech synthesis HUD & audio settings.
 - 🔐 **[[How-To-Access-Admin-Console]]**: Audit trails & licensed user admin access.
 
 ### 🛡️ Security, Privacy & Enterprise
-- 🧠 **[[Architecture-and-Security]]**: Fresh Context Protocol, DPAPI encryption & loopback boundaries.
+- 🧠 **[[Architecture-and-Security]]**: Fresh context handoffs, local processing & protected storage.
 - 🛡️ **[[10-Gate-Security-Audit]]**: Official 100% Passed zero-CVE audit & CycloneDX SBOM.
 - 💼 **[[Licensing-and-Enterprise-Tiers]]**: Commercial tiers, SLA benefits & source code options.
 - ❓ **[[Customer-FAQ-and-Troubleshooting]]**: Privacy guarantees, model recommendations & support.

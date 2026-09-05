@@ -26,8 +26,8 @@ The **Business & Custom Development Enterprise Edition** is the ultimate partner
 ## 📦 1. Everything Included in the Prime Developer Package
 
 You receive immediate, irrevocable, full access to the complete production source code:
-1. ⚙️ **C# / .NET 8 Enterprise WebApi Core**: Adversarial state machine, sequential batching engine, round orchestrator, and PBKDF2-HMAC-SHA256 admin security.
-2. 🔒 **AES-256-GCM + DPAPI Cryptographic Subsystem**: Local hardware Machine ID encryption at rest.
+1. ⚙️ **Enterprise Application Core**: Adversarial state machine, sequential batching engine, round orchestrator, and administrative security.
+2. 🔒 **Protected Storage Subsystem**: Secure local storage for application state and agreements.
 3. 🎨 **React 19 / Vite Frontend Workbench**: Real-time side-by-side diffs, model debate HUD, and Web Speech synthesized radio commentary.
 4. 🖥️ **Windows Desktop Host & Setup Engine**: Single-file standalone GUI installer engine (`DualAI.Arena.Setup.exe`) and process termination lifecycles.
 5. 🧪 **Automated 10-Gate Security Verification Suite**: 8 PowerShell security test suites, CycloneDX v1.5 SBOM generator, and SHA-256 release manifest signer.

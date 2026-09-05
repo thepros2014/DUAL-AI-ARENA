@@ -44,7 +44,7 @@ When you paste a file into ChatGPT and ask: *"Find the bugs and fix them,"* you 
 3. **Personality Conflict**: A single prompt cannot effectively maintain a ruthless offensive black-hat hacker persona and a disciplined enterprise software architect persona at the exact same moment.
 
 ### How DUAL-AI-ARENA Solves This:
-By burning the context memory between rounds and exchanging only raw file artifacts, Red Team and Blue Team operate with **Zero In-Memory Bias**.
+By using focused handoffs between rounds, Red Team and Blue Team reduce context drift and operate with less bias.
 
 💬 **Have you caught ChatGPT or Copilot hallucinating a flawed security fix? Share your war stories below!**
 ```

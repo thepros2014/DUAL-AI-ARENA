@@ -18,13 +18,13 @@
 ---
 
 ## 📂 Quick Repository Directory
-- 💳 **[Payhip API & Webhook Setup Guide](docs/PAYHIP_API_SETUP_GUIDE.md)**: Automated license provisioning & in-app unlock integration.
+- 💳 **[Payhip Purchase & Activation Guide](docs/PAYHIP_API_SETUP_GUIDE.md)**: Customer checkout and in-app activation steps.
 - 📚 **[Official DUAL-AI-ARENA Wiki](https://github.com/thepros2014/DUAL-AI-ARENA-Discussions/wiki)** / **[Local Wiki Folder](wiki/)**: Master knowledge base and complete operational manuals.
-- 🔍 **[How to View & Export Results](docs/HOW_TO_VIEW_RESULTS.md)**: Guide to live UI diffs, `breakage/` reports, disk paths & code export.
+- 🔍 **[How to View & Export Results](docs/HOW_TO_VIEW_RESULTS.md)**: Guide to live UI diffs, review summaries & code export.
 - 🏛️ **[Enterprise Primary Priority SLA](docs/ENTERPRISE_PRIMARY_PRIORITY_SLA.md)**: 20 hrs/week dedicated onboarding + 5 major feature updates + privileged hours.
 - 💼 **[Business & Custom Development License](docs/BUSINESS_CUSTOM_DEV_LICENSE.md)**: Full source + 6 months free feature engineering + \$1,500/mo retainer.
 - 🌟 **[Developer Prime Edition (Full Source)](docs/PRIME_PRODUCT_DESCRIPTION.md)**: Unrestricted full-project source code & integration freedom.
-- 🛡️ **[Official Security Scan & Audit Report](docs/SECURITY_AUDIT_REPORT.md)**: **100% Passed** 10-gate adversarial security verification & CycloneDX SBOM.
+- 🛡️ **[Security Verification Summary](docs/SECURITY_AUDIT_REPORT.md)**: Public overview of release security checks.
 - 📖 **[Master User Instruction Manual](MANUAL.md)**: Full step-by-step installation, AI setup, and operational guide.
 - ❓ **[Master FAQ & Expert Q&A](docs/MASTER_FAQ_AND_QA.md)**: Exhaustive Q&A reference on setup, models, encryption, and licensing.
 - 🗺️ **[Engineering Roadmap & TODOs](ROADMAP.md)**: 2026–2027 milestone targets, CI/CD bot plans & active community tasks.
@@ -59,7 +59,7 @@
             └───────────────────────┬───────────────────────┘
                                     ▼
        ┌─────────────────────────────────────────────────────────┐
-       │     AES-256-GCM ENCRYPTED LOCAL WORKSPACE SNAPSHOT      │
+       │        PROTECTED LOCAL WORKSPACE SNAPSHOT               │
        │    (Only validated, hardened code crosses the line)     │
        └─────────────────────────────────────────────────────────┘
 ```
@@ -67,7 +67,7 @@
 1. **🔴 Red Team (Adversary)**: Uses fresh context isolation to hunt for zero-days, injection boundaries, authentication bypasses, and logic flaws.
 2. **🔵 Blue Team (Defender)**: Receives verified breakage reports, rewrites vulnerable functions, hardens cryptographic boundaries, and writes automated test suites.
 3. **⚖️ Multi-Model Consensus**: Multiple models (OpenAI, Gemini, Ollama) collaborate and debate to verify that each patch is clean and does not introduce regressions.
-4. **🔒 100% On-Premise Privacy**: Windows DPAPI encryption + AES-256-GCM ensures your intellectual property never leaves your local hardware.
+4. **🔒 Local-first privacy**: Local model workflows keep your code on your computer, with protected application storage for saved settings and results.
 
 ---
 
@@ -81,7 +81,7 @@ Join the conversation in our **[GitHub Discussions](https://github.com/thepros20
 | **Showcase & Battles** | 🎬 | Open Discussion | Share battle recordings, exploit discoveries, and model debate transcripts. |
 | **Benchmark Challenges** | 🏆 | Q&A / Challenge | Post vulnerable code snippets to challenge the community and Red Team. |
 | **Offline & Local AI (Ollama)** | ⚡ | Open Discussion | Benchmarks for running local GPUs, Llama 3.2, Qwen 2.5 Coder, DeepSeek. |
-| **Architecture & Deep Dives** | 🧠 | Open Discussion | Technical discussions on fresh context isolation, DPAPI, and AST parsers. |
+| **Architecture & Deep Dives** | 🧠 | Open Discussion | Technical discussions on fresh context isolation, privacy, and AST parsers. |
 | **Ideas & Feature Polls** | 💡 | Poll / Voting | Vote on community feature requests, Docker sandboxing, and CI/CD bots. |
 
 ---

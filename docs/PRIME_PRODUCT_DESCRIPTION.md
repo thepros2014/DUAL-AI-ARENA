@@ -21,9 +21,9 @@ When you complete checkout on Payhip, you immediately receive the complete, unmi
 
 ### 1. ⚙️ C# / .NET 8 Enterprise WebApi Core
 - Full C# source for the adversarial state machine, round manager, and orchestrator.
-- Encrypted file codec subsystem utilizing **AES-256-GCM** with **Windows DPAPI** hardware machine key binding.
+- Protected local storage for application state, agreements and review artifacts.
 - High-throughput sequential batch processing engine with context token budgeting.
-- PBKDF2-HMAC-SHA256 administrative credential security & anti-brute-force rate limiting.
+- Administrative access controls and abuse-rate protection.
 
 ### 2. 🎨 React 19 / Vite Frontend Workbench
 - Modern glassmorphism UI built with **React 19, Vite 8, and modern CSS variables**.

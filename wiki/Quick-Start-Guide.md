@@ -21,7 +21,7 @@ Upon launching for the first time:
 1. Review the commercial software license and anti-piracy notice.
 2. Enter your Company/Name, Email, and digital signature.
 3. Click **"ACCEPT, DIGITALLY SIGN & ENTER ARENA →"**.
-4. The agreement is signed and securely stored using Windows DPAPI, binding your license to your local hardware.
+4. The agreement is signed and stored in the application's protected local storage.
 
 ---
 

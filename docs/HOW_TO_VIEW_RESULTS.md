@@ -1,12 +1,12 @@
 # 🔍 DUAL-AI-ARENA — How to View, Inspect & Export Battle Results
-**Step-by-Step Guide to In-App Diffs, Breakage Reports, Disk Storage & Code Export**
+**Step-by-Step Guide to In-App Diffs, Review Summaries & Code Export**
 
 ---
 
 ## 📌 Overview
 After running an adversarial battle in **DUAL-AI-ARENA**, your results are available through two distinct interfaces:
 1. **Live in the Desktop Application UI** (Interactive Diffs, Working Tree, and Breakage Reports).
-2. **On Your Local Windows File System** (Encrypted at rest with AES-256-GCM + DPAPI).
+2. **In Protected Local Application Storage**.
 
 ---
 
@@ -48,7 +48,7 @@ When a turn completes, the Arena interface updates with real-time audit panels:
 All workspaces, review histories, and consensus results are persisted in encrypted local application storage on your machine. You can browse stored results using the **"View Saved Results"** option within the application, which opens the encrypted store in-app.
 
 > [!NOTE]
-> All files on disk are encrypted using **AES-256-GCM** with master keys derived from the **Windows Data Protection API (DPAPI)**, protecting your source code from unauthorized access by other OS accounts or malware.
+> Saved settings, agreements and results remain in protected application storage on your device. Do not publish raw records or source files in support requests.
 
 ---
 

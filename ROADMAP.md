@@ -22,8 +22,8 @@ Our mission is to build the world's most robust, zero-trust, autonomous multi-ag
 
 ### 🟢 Phase 1: Desktop Core & Licensing (Q3 2026 — COMPLETED ✅)
 - [x] **Adversarial Red vs. Blue State Machine**: Fresh context isolation protocol with raw file artifact handoffs.
-- [x] **100% On-Premise Privacy**: Windows DPAPI encryption + AES-256-GCM encrypted persistence.
-- [x] **Multi-Provider Engine**: First-class support for OpenAI, Google Gemini, and local Ollama loopback endpoints.
+- [x] **Local-first Privacy**: Local model workflows with protected application storage.
+- [x] **Multi-Provider Engine**: First-class support for OpenAI, Google Gemini, and local Ollama models.
 - [x] **Single-File Windows Setup**: 1-Click GUI installer with auto-uninstallation and process-tree lifecycle management.
 - [x] **Live Radio Voice Commentary**: Real-time synthesized play-by-play audio commentary.
 - [x] **Free Trial & Payhip Licensing**: 2-result free trial boundary with instant cryptographic license key activation.

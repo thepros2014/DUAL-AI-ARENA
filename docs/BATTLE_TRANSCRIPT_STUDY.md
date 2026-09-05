@@ -35,7 +35,7 @@
   ```javascript
   if (computedSignature === userProvidedSignature) { ... }
   ```
-  Because standard string comparison aborts early on the first non-matching byte, an attacker can measure nanosecond latency differences over HTTP to brute-force the HMAC signature byte-by-byte without knowing the server's private secret.
+  Because standard string comparison aborts early on the first non-matching byte, an attacker can measure response-time differences over HTTP without access to the server's signing material.
 
 - **Proof-of-Concept Exploit Payload**:
   ```python
@@ -60,8 +60,8 @@
 ```diff
 --- a/working/auth.js
 +++ b/working/auth.js
-@@ -35,8 +35,14 @@ function verifySignature(payload, signature, secret) {
-   const computed = crypto.createHmac('sha256', secret).update(payload).digest('hex');
+@@ -35,8 +35,14 @@ function verifySignature(payload, signature, testKey) {
+  const computed = crypto.createHmac('sha256', testKey).update(payload).digest('hex');
 -  // Flawed early-abort comparison
 -  return computed === signature;
 +  // Constant-time comparison immune to side-channel timing analysis
@@ -80,14 +80,14 @@ const { verifySignature } = require('../auth');
 const assert = require('assert');
 
 // 1. Valid Signature Test
-const secret = 'super-secret-key-12345';
-const payload = 'user=admin&role=superuser';
-const validSig = require('crypto').createHmac('sha256', secret).update(payload).digest('hex');
-assert.strictEqual(verifySignature(payload, validSig, secret), true, 'Valid signature must pass.');
+const testKey = require('crypto').randomBytes(32);
+const payload = 'user=test&role=reader';
+const validSig = require('crypto').createHmac('sha256', testKey).update(payload).digest('hex');
+assert.strictEqual(verifySignature(payload, validSig, testKey), true, 'Valid signature must pass.');
 
 // 2. Tampered Signature Test
 const forgedSig = 'a' + validSig.slice(1);
-assert.strictEqual(verifySignature(payload, forgedSig, secret), false, 'Forged signature must fail.');
+assert.strictEqual(verifySignature(payload, forgedSig, testKey), false, 'Forged signature must fail.');
 console.log('✅ Blue Team Verification Suite Passed.');
 ```
 

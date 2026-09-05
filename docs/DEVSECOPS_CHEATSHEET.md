@@ -80,7 +80,7 @@ This cheat sheet summarizes the **Top 10 Security Flaws** most frequently uncove
 ---
 
 ### 7. Server-Side Request Forgery (SSRF) & Loopback Smuggling (CWE-918)
-- 🔴 **The Flaw**: Fetching user-supplied URLs without restricting private loopback subnets (`127.0.0.1`, `169.254.169.254`, `10.0.0.0/8`).
+- 🔴 **The Flaw**: Fetching user-supplied URLs without restricting private, loopback, and link-local network ranges.
 - 🔵 **The Fix**: Resolve DNS first, validate against a private IP blacklist, and pin the socket to the validated IP.
 
 ---

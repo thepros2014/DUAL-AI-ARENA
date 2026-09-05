@@ -4,6 +4,8 @@
 ---
 
 ## 🎯 How to Use These Challenges
+> **Safety note:** Every snippet in this pack is synthetic, intentionally vulnerable, and for throwaway test data only. Never paste real secrets, customer data, production URLs, or proprietary code into a public challenge.
+
 1. Open **DualAI MID Arena**.
 2. Click **"Create Challenge"**.
 3. Create a file matching the path shown in the challenge.
@@ -22,7 +24,7 @@
 ```javascript
 const crypto = require('crypto');
 
-function verifyJwtToken(token, secretKey) {
+function verifyJwtToken(token, fixtureKey) {
   const [headerB64, payloadB64, signatureB64] = token.split('.');
   if (!headerB64 || !payloadB64) return null;
 
@@ -35,7 +37,7 @@ function verifyJwtToken(token, secretKey) {
   }
 
   const expectedSignature = crypto
-    .createHmac('sha256', secretKey)
+    .createHmac('sha256', fixtureKey)
     .update(`${headerB64}.${payloadB64}`)
     .digest('base64url');
 
@@ -169,8 +171,8 @@ module.exports = { deepMerge };
 import os
 import shutil
 
-UPLOAD_DIR = "/var/app/uploads"
-QUARANTINE_DIR = "/var/app/quarantine"
+UPLOAD_DIR = "./example-uploads"
+QUARANTINE_DIR = "./example-quarantine"
 
 def process_user_upload(temp_file_path: str, filename: str):
     destination = os.path.join(UPLOAD_DIR, filename)
@@ -180,7 +182,7 @@ def process_user_upload(temp_file_path: str, filename: str):
         raise ValueError("File exceeds 5MB limit.")
         
     # VULNERABILITY: TOCTOU race window between getsize() check and copy2() execution
-    # An attacker can replace temp_file_path with a symlink to /etc/shadow or a huge 10GB file
+    # An attacker can replace temp_file_path with a symlink outside the approved sample directory or a huge file
     shutil.copy2(temp_file_path, destination)
     return destination
 ```

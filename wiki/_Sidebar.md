@@ -10,7 +10,7 @@
 
 ### ⚔️ Battle Operations
 - **[[How-To-Run-Autonomous-Battles]]**
-- **[[How-To-View-and-Export-Results]]**
+- **[[Viewing-and-Exporting-Results]]**
 - **[[How-To-Enable-Live-Radio-Commentary]]**
 - **[[How-To-Access-Admin-Console]]**
 

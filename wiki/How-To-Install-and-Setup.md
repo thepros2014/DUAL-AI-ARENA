@@ -16,7 +16,7 @@
 1. Download **`DualAI-MID-Arena-Setup.exe`** (or **`DualAI-MID-Arena-Free-Setup.exe`**).
 2. Double-click the installer executable.
 3. Click **"Install Now"**.
-4. The setup deploys binaries to `%LOCALAPPDATA%\Programs\DualAIMIDArena`, registers Windows shortcuts, and launches the Arena.
+4. The setup installs the application for the current Windows user, registers shortcuts, and launches the Arena.
 
 ### Option B: Offline Installer ZIP
 1. Extract `DualAI-MID-Arena-v1.0.0-Windows-Installer.zip`.
@@ -31,7 +31,7 @@
 ## 📜 3. Initial Digital Agreement Sign-Off
 1. On first launch, enter your **Name/Organization** and **Email**.
 2. Click **"ACCEPT, DIGITALLY SIGN & ENTER ARENA →"**.
-3. Your digital signature is encrypted using **Windows DPAPI** and bound to your local hardware Machine ID (`SHA256`).
+3. Your agreement is stored in the application's protected local storage.
 
 ---
 

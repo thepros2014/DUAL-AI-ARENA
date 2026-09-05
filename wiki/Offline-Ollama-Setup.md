@@ -16,7 +16,7 @@ ollama run qwen2.5-coder:7b
 # Best reasoning & zero-day threat hunter:
 ollama run deepseek-r1:8b
 
-# Fastest execution on laptops (2.4 GB VRAM):
+# Lightweight option for laptops:
 ollama run llama3.2
 ```
 

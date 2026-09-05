@@ -7,17 +7,14 @@
 
 1. Launch DUAL-AI-ARENA and navigate to the **Create Challenge** screen.
 2. In the **Workspace Directory** field:
-   - Click **"Browse Folder"** to select your project directory (e.g. `C:\Projects\my-microservice`), or paste the path.
+   - Click **"Browse Folder"** to select your project directory, or paste the path.
 3. The Arena recursively scans the directory for source files (`.js`, `.ts`, `.py`, `.cs`, `.go`, `.rs`, `.java`, `.sol`, etc.).
 
 ---
 
 ## 🛡️ 2. Memory Boundaries & Safety Exclusions
 
-DUAL-AI-ARENA enforces automated memory protection to ensure smooth model token handling:
-- **Automatic Exclusions**: `node_modules/`, `.git/`, `dist/`, `bin/`, `obj/`, and binary media files are automatically excluded.
-- **Single-File Safety Ceiling**: Maximum 32 MB per individual file.
-- **Workspace Memory Ceiling**: Maximum 128 MB total workspace memory.
+DUAL-AI-ARENA filters common build artifacts and binary media, and applies safe input limits before processing.
 
 ---
 

@@ -32,7 +32,7 @@ Traditional static analysis tools (SAST) spit out hundreds of false positives. S
 1. 🔴 **Red Team (Adversary)**: Uses fresh context isolation to hunt for zero-days, injection boundaries, authentication bypasses, and logic flaws.
 2. 🔵 **Blue Team (Defender)**: Receives verified breakage reports, rewrites vulnerable functions, hardens cryptographic boundaries, and writes regression test suites.
 3. ⚖️ **Multi-Model Consensus**: OpenAI (`gpt-4o`), Google Gemini (`gemini-1.5-pro`), and local Ollama (`llama3.2`) models debate each pull-request snapshot before code is accepted.
-4. 🔒 **100% On-Premise Privacy**: Windows DPAPI encryption + AES-256-GCM ensures your intellectual property never leaves your local hardware.
+4. 🔒 **Local-first privacy**: Local model workflows keep your code on your computer, with protected application storage for saved settings and results.
 
 ---
 
@@ -138,9 +138,9 @@ DualAI MID Arena enforces a strict **Fresh Context Architecture**:
 ```
 
 ### 🔒 Key Architectural Safeguards:
-- **Zero In-Memory Context Leakage**: Blue Team never sees Red Team's scratchpad or chain-of-thought tokens — only the concrete file diffs.
-- **Deterministic Byte Ceilings**: Files are capped at 32 MB and workspaces at 128 MB using pre-read streams to eliminate memory exhaustion attacks.
-- **DPAPI Hardening**: Encryption keys never exist in plaintext on disk.
+- **Minimal Handoffs**: Blue Team receives the files and findings needed for the next step, not the prior model's private reasoning.
+- **Bounded Inputs**: Large files and unsupported binary content are filtered before processing.
+- **Protected Storage**: Saved settings and results remain in the application's protected local storage.
 
 💬 **What are your thoughts on multi-agent adversarial loops vs. single-agent reasoning? Let's discuss below!**
 ```
@@ -223,19 +223,7 @@ Think you have written a security flaw that an AI model can't find? Let's put it
 ---
 
 ### 📝 Example Challenge Template:
-```javascript
-// Challenge #01: Token Verifier (Node.js)
-const crypto = require('crypto');
-
-function verifySession(userToken, storedToken) {
-  if (userToken.length !== storedToken.length) return false;
-  let match = true;
-  for (let i = 0; i < userToken.length; i++) {
-    if (userToken[i] !== storedToken[i]) match = false;
-  }
-  return match;
-}
-```
+Use a short, self-contained, intentionally vulnerable snippet with synthetic data only. Do not include secrets, customer information, production URLs, or proprietary code.
 
 💬 **Post your challenge snippets below or reply with Red Team's findings!**
 ```

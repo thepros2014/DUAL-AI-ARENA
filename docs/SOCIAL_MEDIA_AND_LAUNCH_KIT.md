@@ -22,11 +22,11 @@ When you ask a single LLM to find and fix bugs, it often defends its initial rea
 
 DualAI MID Arena introduces a fresh-context adversarial loop on the desktop:
 1. Red Team AI receives a read-only snapshot of your workspace, hunts for zero-days, and generates concrete proof-of-concept exploits.
-2. The context is burned to zero memory.
+2. Each task receives a clean, focused handoff.
 3. Blue Team AI receives only the file diffs and reports, patches the code, and writes automated tests.
 4. Multi-model consensus (OpenAI, Gemini, local Ollama) debates and verifies the patch before code is released.
 
-Everything runs 100% on-premise on Windows with DPAPI + AES-256-GCM encryption. You can run it completely offline with local Ollama models (like Qwen 2.5 Coder and Llama 3.2).
+Everything runs locally on Windows with protected application storage. You can run it completely offline with local Ollama models (like Qwen 2.5 Coder and Llama 3.2).
 
 We've released a Free Edition (providing 2 complete battle results) and an Enterprise Pro version.
 
@@ -77,7 +77,7 @@ What model pairings are you guys using for code analysis?
 > 
 > DualAI solves this with **Fresh Context Isolation**:
 > 🔴 Red Team hunts zero-days
-> 🧹 Context memory burned to 0
+> 🧹 Clean, focused task handoffs
 > 🔵 Blue Team patches the flaw
 > ⚖️ 3+ models reach consensus
 > (2/5)
@@ -116,7 +116,7 @@ Tired of manual code audits and hallucinated AI fixes?
 - 🔴 Red Team Threat Hunter vs. 🔵 Blue Team Defender
 - ⚖️ Multi-Model Consensus (OpenAI + Gemini + Ollama)
 - 🎙️ Live Radio Voice Commentary calling every play
-- 🔒 100% On-Premise DPAPI Encryption
+- 🔒 Local-first protected storage
 
 📥 **Get Started:**
 - Join the Discussions: https://github.com/thepros2014/dual-ai-arena-discussions/discussions

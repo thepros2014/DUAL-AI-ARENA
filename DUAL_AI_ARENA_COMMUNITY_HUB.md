@@ -40,7 +40,7 @@ To set up the `dual-ai-arena-discussions` repository's **Discussions** tab, conf
 | **Showcase & Battles** | 🎬 | Open Discussion | Share battle recordings, exploit discoveries, and model debate transcripts. |
 | **Benchmark Challenges** | 🏆 | Q&A / Challenge | Post vulnerable code snippets to challenge the community and Red Team. |
 | **Offline & Local AI (Ollama)** | ⚡ | Open Discussion | Benchmarks for running local GPUs, Llama 3.2, Qwen 2.5 Coder, DeepSeek. |
-| **Architecture & Deep Dives** | 🧠 | Open Discussion | Technical discussions on fresh context isolation, DPAPI, and AST parsers. |
+| **Architecture & Deep Dives** | 🧠 | Open Discussion | Technical discussions on fresh context isolation, privacy, and AST parsers. |
 | **Ideas & Feature Polls** | 💡 | Poll / Voting | Vote on community feature requests, Docker sandboxing, and CI/CD bots. |
 
 ---
@@ -66,7 +66,7 @@ DualAI MID Arena is an enterprise-grade Windows desktop application that pits ri
 1. 🔴 **Red Team (Adversary)**: Explores attack surfaces, hunts for zero-day vulnerabilities, and synthesizes concrete proof-of-concept exploits.
 2. 🔵 **Blue Team (Defender)**: Rewrites vulnerable logic, hardens cryptographic boundaries, and generates automated regression tests.
 3. ⚖️ **Multi-Model Consensus**: OpenAI (`gpt-4o`), Google Gemini (`gemini-1.5-pro`), and local Ollama (`llama3.2`) models debate each pull request before code is accepted.
-4. 🔒 **100% On-Premise Privacy**: Windows DPAPI encryption + AES-256-GCM ensures your intellectual property never leaves your local hardware.
+4. 🔒 **Local-first privacy**: Local model workflows keep your code on your computer, with protected application storage for saved settings and results.
 
 ### 🎥 Watch the Demo:
 - 📽️ **Action Teaser**: `studio/DUALAI_Arena.mp4`
@@ -114,7 +114,7 @@ If you ask an AI model: *"Find all security vulnerabilities in this file, then f
 3. 🚫 **Adversarial Jailbreaks**: A single prompt cannot reliably maintain offensive and defensive personas simultaneously.
 
 ### ⚔️ The DualAI Solution: The Fresh Context Protocol
-DualAI MID Arena completely burns the conversation context between turns. Only validated, encrypted file snapshots cross the line.
+DualAI MID Arena starts each turn with the files and findings needed for that step, reducing context drift and keeping the workflow focused.
 
 ```
        [TURN N: RED TEAM] ──> (Produces breakage/ report)
@@ -167,26 +167,8 @@ ollama run deepseek-r1:8b
 
 Think you have written a security flaw that an AI model can't find? Let's put it to the test!
 
-### 📝 Challenge Example #1: JWT "alg": "none" Signature Stripping
-```javascript
-const crypto = require('crypto');
-
-function verifyJwtToken(token, secretKey) {
-  const [headerB64, payloadB64, signatureB64] = token.split('.');
-  if (!headerB64 || !payloadB64) return null;
-
-  const header = JSON.parse(Buffer.from(headerB64, 'base64url').toString('utf8'));
-  const payload = JSON.parse(Buffer.from(payloadB64, 'base64url').toString('utf8'));
-
-  // VULNERABILITY: Permitting 'none' algorithm
-  if (header.alg === 'none') {
-    return payload;
-  }
-
-  const expectedSignature = crypto.createHmac('sha256', secretKey).update(`${headerB64}.${payloadB64}`).digest('base64url');
-  return signatureB64 === expectedSignature ? payload : null;
-}
-```
+### 📝 Challenge Example #1: JWT Algorithm Validation
+Use a short, self-contained, intentionally vulnerable snippet with synthetic data only. Do not include secrets, customer information, production URLs, or proprietary code.
 
 👉 **Check out all 5 ready-to-test benchmark challenges in [`docs/BENCHMARK_CHALLENGES.md`](docs/BENCHMARK_CHALLENGES.md)!**
 

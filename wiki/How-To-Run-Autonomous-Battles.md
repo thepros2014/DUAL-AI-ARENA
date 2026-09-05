@@ -9,7 +9,7 @@
 2. Toggle the **"AUTO HANDOFF"** switch in the control bar to **ON**.
 3. Red Team begins **Turn 01 (Attack)**:
    - Identifies security vulnerabilities and writes exploit reports into `breakage/`.
-4. The system burns context memory and automatically passes file diffs to Blue Team for **Turn 02 (Defense)**:
+4. The system creates a focused handoff for Blue Team’s **Turn 02 (Defense)**:
    - Implements cryptographic patches and unit tests in `working/`.
 5. The cycle repeats autonomously until all vulnerabilities are resolved or the maximum round limit is reached.
 
@@ -26,4 +26,4 @@ If you prefer granular control over each AI turn:
 
 ---
 
-- [[Home]] • [[How-To-View-and-Export-Results]] • [[How-To-Enable-Live-Radio-Commentary]]
+- [[Home]] • [[Viewing-and-Exporting-Results]] • [[How-To-Enable-Live-Radio-Commentary]]

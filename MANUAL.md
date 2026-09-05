@@ -40,7 +40,7 @@
             └───────────────────────┬───────────────────────┘
                                     ▼
        ┌─────────────────────────────────────────────────────────┐
-       │     AES-256-GCM ENCRYPTED LOCAL WORKSPACE SNAPSHOT      │
+       │        PROTECTED LOCAL WORKSPACE SNAPSHOT               │
        │    (Only validated, hardened code crosses the line)     │
        └─────────────────────────────────────────────────────────┘
 ```
@@ -74,7 +74,7 @@ You can choose any of the three convenient installation methods provided:
 1. Double-click **`DualAI-MID-Arena-Setup.exe`** (or `DualAI-MID-Arena-Free-Setup.exe`).
 2. The modern dark-themed Setup Wizard will appear:
    - Click **"Install Now"**.
-   - The installer automatically unpacks the application into `%LOCALAPPDATA%\Programs\DualAI MID Arena`.
+   - The installer sets up the application for the current Windows user.
    - Creates a **Desktop Shortcut** and **Start Menu Shortcut**.
    - Registers the application in Windows **Installed Apps (Add/Remove Programs)**.
 3. Once completed, click **"Finish"** and DualAI MID Arena launches immediately in its dedicated native window.
@@ -88,7 +88,7 @@ You can choose any of the three convenient installation methods provided:
 2. Double-click **`DualAI.Arena.exe`** to run the app directly from any folder or USB drive.
 
 > [!TIP]
-> **Process Termination Guarantee**: When you close the native DualAI MID Arena window by clicking `[X]`, the entire background server and all worker threads terminate instantly (`Environment.Exit(0)`), ensuring zero lingering background processes.
+> **Process Termination Guarantee**: When you close the native DualAI MID Arena window by clicking `[X]`, the application shuts down its local background work and leaves no lingering session.
 
 ---
 
@@ -103,7 +103,7 @@ When launching DualAI MID Arena for the first time, you are presented with the *
    - **Business or Contact Email**: Where your official license receipt is registered.
    - **Digital Signature**: Type your legal name to electronically sign.
 3. **Acceptance**: Check the confirmation box and click **"ACCEPT, DIGITALLY SIGN & ENTER ARENA →"**.
-4. **Hardware Binding**: Your agreement is cryptographically signed and securely stored using Windows DPAPI, binding the license to your local machine.
+4. **Protected Storage**: Your agreement is securely stored in the application on your device.
 
 ---
 
@@ -147,8 +147,8 @@ Click **"Save Configuration"** to lock in your settings with AES-GCM encryption.
 You can launch a battle on any codebase using one of three options:
 
 ### Option 1: Direct Local Folder Import (1-Click)
-1. In the **Create New Challenge** view, enter your local folder path (e.g. `C:\Users\YourName\Projects\MyApp`).
-2. DualAI MID Arena validates directory boundaries, enforces the 32 MB per-file and 128 MB workspace safety ceilings, and loads all code files into an isolated, encrypted working sandbox.
+1. In the **Create New Challenge** view, select your local project folder.
+2. DualAI MID Arena validates directory boundaries, filters unsupported content, and loads source files into a protected working sandbox.
 
 ### Option 2: Manual Code Upload / Inlined Files
 1. Click **"+ Add File"** to add individual source code files (e.g. `auth.js`, `server.py`, `database.cs`).
@@ -209,7 +209,7 @@ DualAI MID Arena features an integrated **Live Radio Commentary System**:
 | **AI Battle Results** | **2 Free Results** | **Unlimited Battle Rounds** |
 | **Multi-Model Consensus** | Standard | Full Sync (OpenAI + Gemini + Ollama) |
 | **Local Folder Import** | Included | Included |
-| **AES-256-GCM DPAPI Encryption** | Included | Included |
+| **Protected Local Storage** | Included | Included |
 | **Commercial License & Anti-Piracy EULA** | Non-Commercial Trial | **Full Commercial Use** |
 | **Turn Limit Enforcement** | Switches to Upgrade Screen after Turn 2 | Never Expires |
 | **Support & Lifetime Updates** | Community | **Priority Support & Updates** |
@@ -228,7 +228,7 @@ If you are running the Free Edition and wish to unlock unlimited battle rounds:
 
 1. Click on the **"FREE TRIAL (2/2)"** badge in the top-right header, or wait for the Purchase Modal to appear upon completing your 2nd result.
 2. In the **"Already purchased? Enter your license key"** section:
-   - Paste your Enterprise key (e.g. `DUALAI-ENT-8842-9912-3341-7712`).
+   - Paste your Enterprise key (e.g. `DUALAI-ENT-XXXX-XXXX-XXXX-XXXX`).
    - Click **"ACTIVATE KEY"**.
 3. The app validates the key, updates your encrypted license state, and displays the **`★ ENTERPRISE`** badge.
 4. All turn limits are immediately removed!
@@ -241,9 +241,9 @@ DualAI MID Arena is engineered from the ground up for strict enterprise security
 
 1. **100% On-Premise Privacy**: Source code is processed strictly on your machine. When using local Ollama models, zero bytes ever leave your hardware.
 2. **Loopback Isolation**: The backend server binds strictly to the local loopback interface, rejecting any external local network (LAN) requests.
-3. **Windows DPAPI + AES-256-GCM**: Provider API keys, legal agreements, and workspace states are encrypted with AES-256-GCM using keys protected by Windows Data Protection API (DPAPI).
+3. **Protected Local Storage**: Provider settings, legal agreements, and workspace states are stored securely on the local device.
 4. **Strict Memory Ceilings**: Per-file and per-workspace memory limits prevent denial-of-service from oversized inputs.
-5. **CSRF & Owner Token Isolation**: All API endpoints enforce anti-forgery headers and per-session cryptographic owner tokens.
+5. **Request & Session Protections**: Application requests are validated and scoped to the active session.
 
 ---
 
@@ -259,7 +259,7 @@ DualAI MID Arena is engineered from the ground up for strict enterprise security
 **A**: The Free Edition includes 2 complete AI battle turn results. To unlock unlimited rounds, enter your Enterprise license key from [https://payhip.com/b/Tfz7D](https://payhip.com/b/Tfz7D).
 
 ### Q: How do I completely uninstall the application?
-**A**: Go to Windows **Settings ➔ Apps ➔ Installed Apps**, locate **DualAI MID Arena Enterprise**, and click **Uninstall**. Alternatively, run `Uninstall.bat` located inside `%LOCALAPPDATA%\Programs\DualAI MID Arena`.
+**A**: Go to Windows **Settings ➔ Apps ➔ Installed Apps**, locate **DualAI MID Arena Enterprise**, and click **Uninstall**.
 
 ---
 

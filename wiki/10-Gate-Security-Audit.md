@@ -1,29 +1,28 @@
-# 🛡️ Official 10-Gate Security Scan & Compliance Report
-**100% Passed Adversarial Verification & CycloneDX SBOM Evidence**
+# 🛡️ Security Verification Summary
+**Public overview of the product's release checks**
 
 ---
 
 ## 1. Executive Security Verdict
-DUAL-AI-ARENA has passed our automated **10-Gate Adversarial Security Verification Suite** with **0 critical/high CVEs and 0 leaked secrets**:
+DUAL-AI-ARENA uses automated release checks covering the following areas. Detailed test fixtures and internal implementation notes are intentionally kept out of the public wiki:
 
 | Gate | Test Focus | Result |
 | :--- | :--- | :---: |
-| **1. Secrets & Key Leaks** | Scanned all files for hardcoded API keys and credentials | 🟢 **0 Secrets** |
-| **2. Dependency CVEs** | Audited NuGet/npm packages against NVD | 🟢 **0 Known CVEs** |
-| **3. AI Attack Fuzzing** | Tested multiple attack vectors against input boundaries | 🟢 **All Blocked** |
-| **4. DPAPI At-Rest Crypto** | AES-256-GCM + Windows DPAPI machine binding | 🟢 **100% Encrypted** |
-| **5. Admin Rate Limiting** | Strong credential hashing + brute-force throttle | 🟢 **Throttled (429)** |
-| **6. Batch Memory Budget** | Sequential batch processing & deterministic token budgets | 🟢 **Zero Overruns** |
-| **7. Free Trial Boundary** | Turn limit strictly enforced on backend | 🟢 **HTTP 402 Enforced** |
-| **8. Native Sandbox Lifecycle**| Immediate process termination on `[X]` window close | 🟢 **Zero Zombies** |
-| **9. Loopback IP Isolation** | Exclusive binding to local loopback interface | 🟢 **LAN Rejected** |
-| **10. Anti-CSRF Headers** | Custom anti-forgery request headers | 🟢 **CSRF Blocked** |
+| **1. Secret scanning** | Release text and configuration reviewed for credential exposure | ✅ Covered |
+| **2. Dependencies** | Third-party packages reviewed for known issues | ✅ Covered |
+| **3. Input handling** | File, path and resource-boundary checks | ✅ Covered |
+| **4. Data protection** | Sensitive local data protected at rest | ✅ Covered |
+| **5. Authentication** | Authorization and abuse-rate controls | ✅ Covered |
+| **6. Resource limits** | Large inputs and long-running work are bounded | ✅ Covered |
+| **7. Licensing** | Trial and license boundaries are checked | ✅ Covered |
+| **8. Process lifecycle** | Clean startup and shutdown behavior | ✅ Covered |
+| **9. Local operation** | Local-only model workflows are supported | ✅ Covered |
+| **10. Request protections** | Invalid-request and cross-site protections are checked | ✅ Covered |
 
 ---
 
-## 2. CycloneDX SBOM & Release Verification
-- **Components Audited**: 25 packages (CycloneDX v1.5 compliant).
-- Release hashes and SBOM artifacts are available to enterprise license holders upon request.
+## 2. Release Verification
+Release artifacts and dependency records are maintained with the build. Enterprise customers can request applicable release evidence through support.
 
 ---
 

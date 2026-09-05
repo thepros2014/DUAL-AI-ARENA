@@ -1,10 +1,10 @@
-# 🧠 Architecture & Security Engine
-**Fresh Context Isolation, DPAPI Encryption & Loopback Boundaries**
+# 🧠 Architecture & Security
+**Fresh context handoffs, local processing & protected storage**
 
 ---
 
 ## 1. The Fresh Context Protocol
-Single-prompt LLMs fail at code security due to confirmation bias and hallucination drift. DUAL-AI-ARENA burns the conversation context between turns, passing only raw file diffs:
+Single-prompt LLMs can fail at code security because of confirmation bias and hallucination drift. DUAL-AI-ARENA keeps each turn focused, passing only task-relevant findings and artifacts:
 
 ```
 [TURN N: RED TEAM] ──> (Publishes breakage/ report)
@@ -17,10 +17,10 @@ Single-prompt LLMs fail at code security due to confirmation bias and hallucinat
 
 ---
 
-## 2. Cryptographic Hardening
-- **Windows DPAPI + AES-256-GCM**: Provider API keys, legal agreements, and workspace states are encrypted using machine-bound DPAPI master keys.
-- **Strict Memory Ceilings**: Per-file and per-workspace memory limits prevent buffer overruns during ingestion.
-- **Loopback Isolation**: Backend server binds exclusively to the local loopback interface — no LAN or internet exposure.
+## 2. Privacy & Safety Boundaries
+- **Protected local storage**: Provider settings, agreements and battle results are stored securely on the user's device.
+- **Bounded inputs**: Large files and unsupported binary content are filtered before processing.
+- **Local-first operation**: Ollama can run inference entirely on the user's computer; cloud providers are used only when selected.
 
 ---
 

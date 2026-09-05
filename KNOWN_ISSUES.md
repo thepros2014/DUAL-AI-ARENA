@@ -18,7 +18,7 @@ If you encounter an issue not documented here, please report it in our **[GitHub
 - **Workaround**:
   1. Click **"More info"**.
   2. Click **"Run anyway"**.
-  3. The installer will proceed with verified DPAPI installation.
+  3. The installer will proceed with the verified installation.
 
 ---
 
@@ -44,9 +44,9 @@ If you encounter an issue not documented here, please report it in our **[GitHub
 
 ---
 
-### 4. File Rejected: "File exceeds 32 MB safety ceiling"
+### 4. File Rejected by Safety Limits
 - **Symptom**: Attempting to import a project folder containing a large `.sqlite`, `.bin`, `.zip`, or video file fails with a 400 error.
-- **Cause**: DUAL-AI-ARENA enforces strict memory protection (32 MB max per single file, 128 MB max per workspace) to prevent buffer exhaustion.
+- **Cause**: DUAL-AI-ARENA applies input and resource limits to prevent oversized or unsupported content from exhausting the application.
 - **Workaround**:
   1. Exclude compiled binary artifacts (`node_modules`, `dist`, `.git`, `.bin`, `.mp4`).
   2. Only import source code files (`.js`, `.ts`, `.py`, `.cs`, `.go`, `.rs`, `.java`, `.json`, `.md`).
@@ -65,12 +65,12 @@ If you encounter an issue not documented here, please report it in our **[GitHub
 ### 6. High VRAM Allocation with Large Local Models (>13B)
 - **Symptom**: Running `codellama:13b` or `mistral-nemo:12b` on GPUs with less than 8 GB of VRAM causes CPU fallback and slower generation speeds.
 - **Workaround**:
-  1. Switch to highly optimized, compact models such as **`qwen2.5-coder:7b`** (5.2 GB VRAM) or **`llama3.2:3b`** (2.4 GB VRAM).
-  2. In Ollama, use 4-bit quantized weights (`q4_k_m`).
+  1. Switch to a highly optimized, compact model such as **`qwen2.5-coder:7b`** or **`llama3.2:3b`**.
+  2. Use a quantized model when your hardware requires it.
 
 ---
 
 ## 🔒 Responsible Security Disclosure
-If you believe you have found a security flaw in DUAL-AI-ARENA itself (e.g. in our DPAPI crypto codec, memory bounds, or native WebView2 wrapper), please do **NOT** post it publicly in Discussions.
+If you believe you have found a security flaw in DUAL-AI-ARENA itself (for example in protected storage, input handling, or the native Windows wrapper), please do **NOT** post it publicly in Discussions.
 
 Report security issues privately to **[thepros2014@gmail.com](mailto:thepros2014@gmail.com?subject=DUAL-AI-ARENA%20Security%20Vulnerability%20Report)**.

@@ -7,7 +7,7 @@
 
 ## 📌 1. How License Activation Works
 
-When customers purchase **DUAL-AI-ARENA** on Payhip, license keys are automatically generated and delivered via order confirmation email and on-screen. The key is verified and stored securely on your local machine using **AES-256-GCM + Windows DPAPI** — no data is sent to external servers during activation.
+When customers purchase **DUAL-AI-ARENA** on Payhip, a license key is delivered through the order confirmation and email. The key is verified and stored in protected local application storage. Activation does not require an online account.
 
 ---
 

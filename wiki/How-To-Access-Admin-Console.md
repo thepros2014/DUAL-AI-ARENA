@@ -1,17 +1,18 @@
 # 🔐 How to Access & Use the Admin Console
-**Admin Unlocks, Audit Trails & Rate Limit Monitoring**
+**Authorized access, diagnostics & local history management**
 
 ---
 
 ## 🔑 1. Unlocking the Administrative Console
 
-The Admin Console is available to licensed users. Access instructions are provided within the application interface upon license activation. If you require admin access and cannot locate the unlock option, contact support at **[thepros2014@gmail.com](mailto:thepros2014@gmail.com?subject=DUAL-AI-ARENA%20Admin%20Console%20Support)**.
+The Admin Console is available to authorized licensed users through the application interface. If you require access and cannot locate the option, contact support at **[thepros2014@gmail.com](mailto:thepros2014@gmail.com?subject=DUAL-AI-ARENA%20Admin%20Console%20Support)**.
 
 ---
 
 ## 🛠️ 2. Capabilities of the Admin Console
-- **Historical Match Audit Logs**: Inspect raw JSON battle logs, round timings, and model consensus metrics.
-- **Storage Metrics**: View total disk usage and clean legacy temporary challenge runs.
+- **Match history**: Review battle summaries, timings and consensus results.
+- **Storage diagnostics**: Review local usage and remove obsolete temporary runs.
+- **Account support**: Contact support for access or licensing questions.
 
 ---
 

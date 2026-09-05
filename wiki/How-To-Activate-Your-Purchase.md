@@ -25,7 +25,7 @@ When you purchase **DUAL-AI-ARENA** on Payhip:
 4. Click **"ACTIVATE KEY"**.
 5. The application will instantly:
    - Verify your license key.
-   - Securely store your license state using **AES-256-GCM + Windows DPAPI**, binding it to your local machine.
+   - Securely store your license state in the application's protected local storage.
    - Unlock **Unlimited AI Battles**, multi-model consensus, and all enterprise features.
 
 ```
@@ -33,7 +33,7 @@ When you purchase **DUAL-AI-ARENA** on Payhip:
 │                    ACTIVATION SUCCESSFUL                    │
 ├─────────────────────────────────────────────────────────────┤
 │  Edition: Enterprise Pro                                    │
-│  Battle Turns: Unlimited (999,999)                          │
+│  Battle Turns: Unlimited                                   │
 │  Status: Active & Encrypted at Rest                         │
 └─────────────────────────────────────────────────────────────┘
 ```

@@ -11,8 +11,8 @@
 ### Q: Can I run this 100% offline with no internet connection at all?
 **A**: **Yes!** If you use **Ollama** (`qwen2.5-coder:7b`, `deepseek-r1:8b`, or `llama3.2`), all AI inference runs locally on your computer's GPU/CPU with **$0 token costs and zero bytes leaving your machine**.
 
-### Q: How are my workspace files and API keys protected on my PC?
-**A**: All settings and workspace files are encrypted on disk using **AES-256-GCM** with master keys derived from the **Windows Data Protection API (DPAPI)**, binding your data exclusively to your Windows user login and hardware machine ID.
+### Q: How are my workspace files and provider settings protected on my PC?
+**A**: They remain in the application's protected local storage. Use local Ollama when you need fully local inference, and review your provider's terms before using a cloud model.
 
 ---
 

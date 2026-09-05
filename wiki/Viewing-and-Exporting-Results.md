@@ -1,17 +1,17 @@
 # 🔍 How to View, Inspect & Export Battle Results
-**UI Diffs, Breakage Reports, Disk Storage & Code Export**
+**UI diffs, review summaries & code export**
 
 ---
 
 ## 1. Live Inside the Desktop UI
-- **`breakage/` Panel**: Click to view Red Team's vulnerability findings, severity ratings, and proof-of-concept exploit payloads.
-- **`working/` Panel**: View the live, hardened source files patched by Blue Team.
+- **Findings panel**: Review Red Team's vulnerability findings and severity ratings.
+- **Working panel**: View the hardened source files patched by Blue Team.
 - **Model Consensus HUD**: View line-by-line diffs (`+ green` / `- red`) and multi-model approval scores.
 
 ---
 
-## 2. Local Windows Disk Storage (AES-256-GCM + DPAPI)
-All historical battles are encrypted and stored locally on your machine. You can browse your stored results from within the application using the **"View Saved Results"** option in the menu.
+## 2. Local Results Storage
+Historical battles remain in the application's protected local storage. Use **"View Saved Results"** inside the application to browse them. Do not publish raw records, source files or local storage details in support requests.
 
 ---
 

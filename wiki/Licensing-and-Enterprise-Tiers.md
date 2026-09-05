@@ -7,13 +7,13 @@
 
 ## 1. Free Trial Edition ($0)
 - Includes **2 complete AI battle turn results**.
-- Full multi-model consensus, local folder import & DPAPI encryption.
+- Full multi-model consensus, local folder import & protected local storage.
 - Switches to Payhip upgrade screen upon completing result #2.
 
 ---
 
 ## 2. Prime Developer Edition (Full Source Code)
-- **100% Unrestricted Full Project Source Code** (.NET 8 WebApi, React 19 Frontend, DPAPI Cryptography, Desktop Host).
+- **100% Unrestricted Full Project Source Code** (backend, frontend, security components and desktop host).
 - Complete freedom to build custom CI/CD integrations, AST rulepacks, and custom model weights.
 - Strict AS-IS / Non-Refundable / All Rights Reserved commercial terms.
 

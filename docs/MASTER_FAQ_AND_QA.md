@@ -7,7 +7,7 @@
 1. [General & How It Works](#1-general--how-it-works)
 2. [AI Models & Ollama Local Setup](#2-ai-models--ollama-local-setup)
 3. [Battle Mechanics & Fresh Context](#3-battle-mechanics--fresh-context)
-4. [Security, Privacy & DPAPI Encryption](#4-security-privacy--dpapi-encryption)
+4. [Security, Privacy & Protected Storage](#4-security-privacy--protected-storage)
 5. [Free Trial vs. Enterprise Pro Licensing](#5-free-trial-vs-enterprise-pro-licensing)
 6. [Troubleshooting & Error Codes](#6-troubleshooting--error-codes)
 
@@ -48,7 +48,7 @@
 ## 3. Battle Mechanics & Fresh Context
 
 ### Q: What does "Fresh Context Isolation" mean?
-**A**: Between battle rounds, the entire conversational memory is burned to 0. Blue Team receives only the concrete file diffs in `working/` and the vulnerability markdown reports in `breakage/`. This prevents hallucination drift, prompt poisoning, and context bloat.
+**A**: Between battle rounds, each team receives a focused handoff containing only the information needed for the next step. This helps reduce hallucination drift, prompt poisoning and context bloat.
 
 ### Q: What is the difference between Autonomous (Gladiator) Mode and Manual Mode?
 **A**:
@@ -60,23 +60,23 @@
 
 ---
 
-## 4. Security, Privacy & DPAPI Encryption
+## 4. Security, Privacy & Protected Storage
 
 ### Q: Does DUAL-AI-ARENA send my source code to your servers?
 **A**: **No, never.** DUAL-AI-ARENA has **zero telemetry** and zero hosted backends. All computation runs locally on your machine. If you use Ollama, zero bytes ever touch the internet.
 
 ### Q: How are API keys and workspace files protected on disk?
-**A**: All settings, provider API keys, legal agreements, and workspace files are encrypted using **AES-256-GCM** with master keys protected by **Windows Data Protection API (DPAPI)**. Only your local Windows user account can decrypt them.
+**A**: Settings, provider configuration, legal agreements and workspace files remain in protected local application storage on your device.
 
 ### Q: Does closing the window leave background processes running?
-**A**: **No.** When you click `[X]` to close the native window, the entire backend server and all worker threads terminate immediately (`Environment.Exit(0)`).
+**A**: **No.** When you click `[X]` to close the native window, the application shuts down its local background work and ends the session.
 
 ---
 
 ## 5. Free Trial vs. Enterprise Pro Licensing
 
 ### Q: What is included in the Free Edition?
-**A**: The Free Edition includes **2 complete AI battle results** with full multi-model consensus, local folder import, and DPAPI encryption, allowing you to test the arena on your codebase.
+**A**: The Free Edition includes **2 complete AI battle results** with full multi-model consensus, local folder import and protected local storage, allowing you to test the arena on your codebase.
 
 ### Q: How do I upgrade to Enterprise Pro?
 **A**: Visit the official store at **[https://payhip.com/b/Tfz7D](https://payhip.com/b/Tfz7D)** to purchase an Enterprise License Key.

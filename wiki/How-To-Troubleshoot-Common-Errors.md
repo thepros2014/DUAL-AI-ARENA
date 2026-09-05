@@ -16,7 +16,7 @@
 ## 3. "Failed to connect to Ollama"
 - **Solution**:
   1. Open PowerShell and run `ollama serve` or `ollama list`.
-  2. Verify that your local firewall allows loopback TCP traffic for Ollama.
+  2. Confirm that Ollama is running and available to local applications.
 
 ---
 

@@ -12,7 +12,7 @@ This catalog lists all pre-rendered multimedia assets included in the `studio/` 
 
 | Asset File | Resolution / Size | Description | Preview / Embed Syntax |
 | :--- | :---: | :--- | :--- |
-| **`studio/Dual_AI_Security_Arena_Overview.png`** | 6.6 MB (High-Res) | Master architectural blueprint showing Red Team, Blue Team, Consensus Layer, and DPAPI Encrypted Sandbox. | `![Overview](studio/Dual_AI_Security_Arena_Overview.png)` |
+| **`studio/Dual_AI_Security_Arena_Overview.png`** | 6.6 MB (High-Res) | Master architectural blueprint showing Red Team, Blue Team, Consensus Layer, and protected local workspace. | `![Overview](studio/Dual_AI_Security_Arena_Overview.png)` |
 | **`studio/The_AI-Driven_Security_Loop.png`** | 5.0 MB (High-Res) | The 4-step cyclical state machine of continuous automated threat hunting and patch verification. | `![Security Loop](studio/The_AI-Driven_Security_Loop.png)` |
 | **`studio/IMesmug3R7ipg.png`** | 1.4 MB | High-impact branded visual banner for forum headers and social cards. | `![Branded Banner](studio/IMesmug3R7ipg.png)` |
 | **`studio/Screenshot 2026-08-29 234425.jpg`** | 196 KB | Live Arena UI screenshot displaying Red/Blue handoff meter and model exchange. | `![Arena UI](studio/Screenshot%202026-08-29%20234425.jpg)` |
